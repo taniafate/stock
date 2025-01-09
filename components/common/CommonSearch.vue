@@ -56,6 +56,10 @@ const searchValue = defineModel<string>('')
   &:hover {
     opacity: 0.8;
   }
+
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 .search__button-icon {
