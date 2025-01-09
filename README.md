@@ -11,23 +11,3 @@ BEM: use as a method of naming styles
 
 *The pictures are taken from Unsplash.
 
-
-
-
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
