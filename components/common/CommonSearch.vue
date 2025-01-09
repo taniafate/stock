@@ -52,14 +52,6 @@ const searchValue = defineModel<string>('')
   color: var(--neutral-100);
   background-color: var(--primary-500);
   border-radius: 10px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    transform: translateY(1px);
-  }
 }
 
 .search__button-icon {

@@ -69,10 +69,6 @@ import { NAVIGATION_LINKS } from '~/constants/navigationLinks';
   &--active {
     background-color: var(--primary-100);
   }
-
-  &:active {
-    transform: translateY(1px);
-  }
 }
 
 .header__link-title {

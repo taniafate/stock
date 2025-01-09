@@ -59,14 +59,6 @@ function getTypeButtonClass(type: TButtonTypes) {
   border-radius: 10px;
   font-size: var(--text-m-fs);
   font-weight: var(--bold-weight);
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    transform: translateY(1px);
-  }
 }
 
 [data-text='true'].button {
@@ -110,18 +102,6 @@ function getTypeButtonClass(type: TButtonTypes) {
 .neutral-icon-button {
   color: var(--primary-500);
   background-color: var(--primary-100);
-}
-
-.button[disabled] {
-  cursor: auto;
-  
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    transform: none;
-  }
 }
 
 @media (min-width: 769px) {

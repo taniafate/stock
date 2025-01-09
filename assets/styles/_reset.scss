@@ -12,16 +12,40 @@ a {
   display: flex;
   align-items: center;
   color: var(--primary-500);
-}
 
-a:hover {
-  opacity: 0.8;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 button {
   all: unset;
   cursor: pointer;
   box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+button[disabled] {
+  cursor: auto;
+  
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    transform: none;
+  }
 }
 
 input,select, ul, li {
