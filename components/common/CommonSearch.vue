@@ -33,13 +33,10 @@ const searchValue = defineModel<string>('')
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  padding: 4px 4px 4px 20px;
+  padding: 20px 4px 20px 20px;
   border: 1px solid var(--primary-200);
   border-radius: 10px;
-}
-
-.search__input {
-  width: calc(100% - 40px);
+  font-size: var(--text-m-fs);
 }
 
 .search__button {

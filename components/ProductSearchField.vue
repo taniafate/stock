@@ -19,9 +19,8 @@ const { filterValue, searchValue } = storeToRefs(useProductsStore())
 
 <style lang="scss" scoped>
 .product-search-field {
-  width: 100%;
-  height: 48px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 274px;
   align-items: center;
   gap: 12px;
   max-inline-size: 1200px;
@@ -32,6 +31,7 @@ const { filterValue, searchValue } = storeToRefs(useProductsStore())
 
 @media (max-width: 768px) {
   .product-search-field {
+    display: flex;
     height: fit-content;
     flex-direction: column;
   }

@@ -29,27 +29,26 @@ function defineTagClass(title: string) {
 <template>
   <div class="filter__container">
     <div class="filter">
-    <div
-      class="filter__tag-list"
-      v-for="tag in tags"
-      :key="tag.id"
-    >
-      <button
-        type="button"
-        class="filter__tag"
-        :class="currentTagTitle === tag.title ? 'filter__tag--active' : ''"
-        @click="defineTagClass(tag.title)"
+      <div
+        class="filter__tag-list"
+        v-for="tag in tags"
+        :key="tag.id"
       >
-      {{ tag.title }}
-    </button>
+        <button
+          type="button"
+          class="filter__tag"
+          :class="currentTagTitle === tag.title ? 'filter__tag--active' : ''"
+          @click="defineTagClass(tag.title)"
+        >
+          {{ tag.title }}
+        </button>
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .filter__container {
-  width: calc(100% - 274px);
   display: flex;
   align-items: center;
 }
@@ -75,6 +74,7 @@ function defineTagClass(title: string) {
 
 .filter__tag {
   color: var(--primary-300);
+  font-size: var(--text-m-fs);
 
   &--active {
     color: var(--primary-500);
@@ -89,6 +89,10 @@ function defineTagClass(title: string) {
   .filter__container {
     width: 100%;
     justify-content: center;
+  }
+
+  .filter__tag {
+    font-size: var(--text-s-fs);
   }
 }
 </style>
