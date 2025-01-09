@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  color: var(--primary-500);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input,select, ul, li {
+  all: unset;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.nuxt-icon {
+  margin-bottom: 0;
+}

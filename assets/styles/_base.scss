@@ -1,0 +1,68 @@
+:root {
+  //colors
+  --primary-500: #2D3B87;
+  --primary-400: #616CA5;
+  --primary-300: #969DC3;
+  --primary-200: #E0E3EE;
+  --primary-100: #F4F5F9;
+
+  --secondary-500: #69C57F;
+
+  --neutral-100: #FFFFFF;
+  
+
+  //font-size
+  --text-l-fs: 20px;
+  --text-m-fs: 15px;
+  --text-s-fs: 13px;
+  --link-fs: 13px;
+  --button-fs: 15px;
+
+  //font-weight
+  --normal-weight: 400;
+  --bold-weight: 500;
+
+  @media (max-width: 768px) {
+    --text-l-fs: 20px;
+    --text-m-fs: 15px;
+    --text-s-fs: 13px;
+    --link-fs: 13px;
+    --button-fs: 15px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+body {
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  font-family:
+    Rubik,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  color: var(--primary-500);
+  background: var(--neutral-100);
+  font-size: var(--text-m-fs);
+  font-weight: var(--normal-weight);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
