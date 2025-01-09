@@ -1,75 +1,13 @@
-# Nuxt Minimal Starter
+# Nuxt 3 App: A test assignment for a company interview
+## Stock - the fake online store project.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Tech stack
 
-## Setup
+Nuxt.js 3, Vue.js 3 (Composition API), Pinia, TypeScript, SCSS modules.
 
-Make sure to install dependencies:
+## Details
+Adaptive layouts: tablet, mobile
+BEM: use as a method of naming styles
 
-```bash
-# npm
-npm install
+*The pictures are taken from Unsplash.
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
