@@ -75,6 +75,7 @@ function defineTagClass(title: string) {
 .filter__tag {
   color: var(--primary-300);
   font-size: var(--text-m-fs);
+  line-height: var(--m-height);
 
   &--active {
     color: var(--primary-500);
@@ -93,6 +94,7 @@ function defineTagClass(title: string) {
 
   .filter__tag {
     font-size: var(--text-s-fs);
+    line-height: var(--s-height);
   }
 }
 </style>

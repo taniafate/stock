@@ -13,7 +13,7 @@
 .default__content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 34px;
   max-inline-size: 1200px;
   margin-inline: auto;
   padding: 0 10px 74px 10px;

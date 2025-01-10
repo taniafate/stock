@@ -59,6 +59,7 @@ function getTypeButtonClass(type: TButtonTypes) {
   border-radius: 10px;
   font-size: var(--text-m-fs);
   font-weight: var(--bold-weight);
+  line-height: var(--m-height);
 }
 
 [data-text='true'].button {

@@ -58,13 +58,14 @@ import { NAVIGATION_LINKS } from '~/constants/navigationLinks';
 
 .header__link {
   width: 86px;
-  height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
   gap: 4px;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  border-radius: 10px;
 
   &--active {
     background-color: var(--primary-100);
@@ -74,10 +75,13 @@ import { NAVIGATION_LINKS } from '~/constants/navigationLinks';
 .header__link-title {
   font-size: var(--link-fs);
   font-weight: var(--bold-weight);
+  line-height: var(--s-height);
 }
 
 .header__link-icon {
   width: 20px;
+  height: 20px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {

@@ -22,13 +22,10 @@
   --normal-weight: 400;
   --bold-weight: 500;
 
-  @media (max-width: 768px) {
-    --text-l-fs: 20px;
-    --text-m-fs: 15px;
-    --text-s-fs: 13px;
-    --link-fs: 13px;
-    --button-fs: 15px;
-  }
+  //line-height
+  --l-height: 20px;
+  --m-height: 15px;
+  --s-height: 13px;
 }
 
 * {
@@ -61,6 +58,7 @@ body {
   color: var(--primary-500);
   background: var(--neutral-100);
   font-size: var(--text-m-fs);
+  line-height: var(--m-height);
   font-weight: var(--normal-weight);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

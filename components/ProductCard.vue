@@ -19,9 +19,11 @@ defineProps<{
         :src="product.image"
       >
       <div class="product-card__data">
-        <span class="product-card__sale-type">
-          {{ product.saleType }}
-        </span>
+        <div class="product-card__sale-type">
+          <span class="product-card__sale-type-title">
+            {{ product.saleType }}
+          </span>
+        </div>
         <span class="product-card__title">
           {{ product.title }}
         </span>
@@ -37,11 +39,13 @@ defineProps<{
             {{ product.seller }}
           </span>
         </div>
-        <div class="product-card__category">
-          <span class="product-card__category-tag">Вид товара</span>
-          <span class="product-card__category-name">
-            {{ product.category }}
-          </span>
+        <div class="product-card__categories">
+          <div class="product-card__category">
+            <span class="product-card__category-tag">Вид товара</span>
+            <span class="product-card__category-name">
+              {{ product.category }}
+            </span>
+         </div>
         </div>
         <p class="product-card__description">
           {{ product.description }}
@@ -117,18 +121,29 @@ defineProps<{
 }
 
 .product-card__sale-type {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.product-card__sale-type-title {
   font-size: var(--text-s-fs);
+  line-height: var(--s-height);
   color: var(--primary-300);
 }
 
 .product-card__title {
+  width: 100%;
   height: 38px;
   font-size: var(--text-m-fs);
+  line-height: var(--m-height);
   font-weight: var(--bold-weight);
 }
 
 .product-card__city {
   display: flex;
+  align-items: center;
   gap: 4px;
   padding: 4px 8px;
   border-radius: 5px;
@@ -139,20 +154,30 @@ defineProps<{
 .product-card__city-icon {
   width: 15px;
   height: 15px;
+  margin-bottom: 0;
 }
 
 .product-card__city-title {
   font-size: var(--text-s-fs);
+  line-height: var(--s-height);
 }
 
 .product-card__seller {
+  width: 100%;
   display: flex;
   gap: 4px;
   font-size: var(--text-s-fs);
+  line-height: var(--s-height);
 }
 
 .product-card__seller-tag {
   color: var(--primary-300);
+}
+
+.product-card__categories {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .product-card__category {
@@ -163,6 +188,7 @@ defineProps<{
   border-radius: 10px;
   background-color: var(--primary-100);
   font-size: var(--text-s-fs);
+  line-height: var(--s-height);
 }
 
 .product-card__category-tag {
@@ -180,6 +206,7 @@ defineProps<{
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: var(--text-s-fs);
+  line-height: var(--s-height);
 }
 
 .product-card__deal {
@@ -201,6 +228,7 @@ defineProps<{
 .product-card__deal-price {
   font-size: var(--text-l-fs);
   font-weight: var(--bold-weight);
+  line-height: var(--l-height);
 }
 
 .product-card__deal-parameters {
@@ -214,6 +242,7 @@ defineProps<{
   align-items: center;
   height: 24px;
   font-size: var(--text-s-fs);
+  line-height: var(--s-height);
 }
 
 .product-card__deal-tag {

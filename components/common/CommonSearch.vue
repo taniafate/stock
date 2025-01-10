@@ -37,6 +37,7 @@ const searchValue = defineModel<string>('')
   border: 1px solid var(--primary-200);
   border-radius: 10px;
   font-size: var(--text-m-fs);
+  line-height: var(--m-height);
 }
 
 .search__button {
